@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gissah Perfumes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Georgia', serif;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 4vw; /* Smaller base size */
+      text-align: center;
+      max-width: 90%; /* Make content wider on mobile */
+      padding: 5vw;
+      background-color: rgba(0, 0, 0, 0.35);
+      border-radius: 10px;
+      line-height: 1.5;
+      word-wrap: break-word;
+    }
+
+    @media (min-width: 768px) {
+      .content {
+        font-size: 1.8em;
+        max-width: 65%;
+        padding: 30px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .content {
+        max-width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background video -->
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="circle.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Overlay text -->
+  <div class="content">
+    On a dark night in Athens, the scent of ”Mavro” embodied its secrets and allure in the shadowed streets, creating an atmosphere of mystery and excitement.
+    Each whiff told thrilling stories and adventurous tales in the dark streets of Athens, blending the darkness of night with the magic of illusions.
+    This enigmatic ambiance reflected a unique charm that mesmerized everyone it touched, lingering until Dawn, immortalizing unforgettable moments in the hearts of those who loved the magic of Athens.
+  </div>
+
+</body>
+</html>
